@@ -5,12 +5,78 @@
     --Transparent-white: hsla(0, 0%, 100%, 0.75); /*Pharagraps*/
     --Very-light-gray: hsl(0, 0%, 95%); /*Bracground, headings, buttons*/
 }
-* {
-    margin: 0;
-    padding: 0;
+* { margin: 0; padding: 0;}
+body {
+    font-family: 'Lexend Deca', 'Big Shoulders Display', cursive, sans-serif, ;
+    font-size: 15px;
 }
 
-body {
-    font-family: 'Lexend Deca', sans-serif, 'Big Shoulders Display', cursive;
-    font-size: 15px;
+/* ---- Contenedor general ---- */
+.card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: 130px;
+    margin-top: 70px;
+    width: 1000px;
+    height: 600px;
+    color: var(--Transparent-white);
+}
+
+/* ---- Estilos generales ---- */
+.card-container figure {
+    margin: 40px 0 20px 40px;
+}
+.card-container h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--Very-light-gray);
+    font-size: 38px;
+    margin: 40px 0 20px 40px;
+}
+.card-container p {
+    font-family: 'Lexend Deca', sans-serif;
+    margin: 40px 50px 20px 40px;
+    line-height: 25px;
+    font-weight: lighter;
+}
+.card-container .card-sedans {
+    background: var(--Bright-orange);
+    width: 300px;
+    height: 500px;
+}
+.card-container .card-suvs {
+    background: var(--Dark-cyan);
+    width: 300px;
+    height: 500px;
+}
+.card-container .card-luxury {
+    background: var(--Very-dark-cyan);
+    width: 300px;
+    height: 500px;
+}
+.button {
+    font-family: 'Lexend Deca', sans-serif; 
+    border-radius: 20px;
+    color: var(--Transparent-white);
+    background: var(--Transparent-white);
+    width: 130px;
+    height: 30px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+
+
+}
+.button:hover {
+
+    background: transparent;
+    border: 2px solid var(--Transparent-white);
+
+
+}
+.button a:hover{
+    color: var(--Transparent-white);
 }
