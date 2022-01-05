@@ -11,7 +11,26 @@ body {
     font-size: 15px;
 }
 
-/* ---- Contenedor general ---- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---- Contenedor general ---- 
 .card-container {
     display: flex;
     flex-direction: row;
@@ -25,7 +44,7 @@ body {
     color: var(--Transparent-white);
 }
 
-/* ---- Estilos generales ---- */
+/* ---- Estilos generales ---- 
 .card-container figure {
     margin: 40px 0 20px 40px;
 }
@@ -66,17 +85,12 @@ body {
     display: flex;
     align-content: center;
     justify-content: center;
-
-
-
 }
 .button:hover {
-
     background: transparent;
     border: 2px solid var(--Transparent-white);
-
-
 }
 .button a:hover{
     color: var(--Transparent-white);
 }
+*/
