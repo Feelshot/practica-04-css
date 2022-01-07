@@ -83,13 +83,24 @@
     .card-container {
         display: flex;
         flex-direction: row;
+        margin-top: 50px;
         
     }
 
 
     .card-sedans { border-radius: 10px 0 0 10px;}
-    .card-suvs {}
     .card-luxury { border-radius: 0 10px 10px 0;}
+
+    .card-container p {
+        width: 250px;
+    }
+    .card-container .button {
+        margin-top: 100px;
+    }
+    .card-luxury, .card-sedans, .card-suvs {
+        width: 350px;
+        height: 550px;
+    }
 }
 
 
