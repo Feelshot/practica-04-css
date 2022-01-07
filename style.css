@@ -5,17 +5,92 @@
     --Transparent-white: hsla(0, 0%, 100%, 0.75); /*Pharagraps*/
     --Very-light-gray: hsl(0, 0%, 95%); /*Bracground, headings, buttons*/
 }
-* { margin: 0; padding: 0;}
-body {
-    font-family: 'Lexend Deca', 'Big Shoulders Display', cursive, sans-serif, ;
-    font-size: 15px;
+* { margin: 0; padding: 0;} body {font-family: 'Lexend Deca', 'Big Shoulders Display', cursive, sans-serif, ;font-size: 15px;}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 25px 15px 0 15px;
+} 
+/* ---- Ajustes generales de distancia y textos ----*/
+    .card-container img, h2, p, .button {
+        margin: 0 0 0 40px;
+    }
+    .card-container img {
+        margin-top: 50px;
+    }
+    .card-container h2, p {
+        margin-top: 30px;
+        color: var(--Transparent-white);
+    }
+    .card-container p {
+        font-size: 18px;
+        font-weight: lighter;
+        line-height: 28px;
+        font-family: 'Lexend Deca';
+        margin: 30px 20px 30px 40px;
+    }
+/* ---- Botones ----*/
+    .button {
+        margin-top: 20px;
+        background-color: var(--Transparent-white);
+        border-radius: 30px;
+        width: 170px;
+        height: 60px;
+        font-family: 'Lexend Deca';
+        font-size: 17px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .button a {
+        text-decoration: none;
+    }
+/* ---- Colores letras botones ---- */
+    .card-suvs .button a{color: var(--Dark-cyan);} .card-sedans .button a{ color: var(--Bright-orange);} .card-luxury .button a{ color: var(--Very-dark-cyan);}
+
+.card-container h2 {
+    font-size: 40px;
+    font-family: 'Big Shoulders Display';
+}
+
+.card-sedans {
+    background-color: var(--Bright-orange);
+    height: 490px;
+    border-radius: 10px 10px 0 0;
+}
+.card-suvs {
+    background-color: var(--Dark-cyan);
+    height: 490px;
+}
+.card-luxury {
+    background-color: var(--Very-dark-cyan);
+    height: 490px;
+    border-radius: 0 0 10px 10px;
+}
+.card-suvs, .card-sedans, .card-luxury {
+    width: 345px;
 }
 
 
+@media (min-width: 375px) {
+    .container {
+        display: flex;
+        align-items: center;
+    }
+}
+@media (min-width: 1000px) {
+    .card-container {
+        display: flex;
+        flex-direction: row;
+        
+    }
 
 
-
-
+    .card-sedans { border-radius: 10px 0 0 10px;}
+    .card-suvs {}
+    .card-luxury { border-radius: 0 10px 10px 0;}
+}
 
 
 
